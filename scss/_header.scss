@@ -1,0 +1,83 @@
+// variables
+
+$bc-b: #0000;
+$font: 'Poiret One', cursive;
+$bold: bold;
+$none: none;
+
+//--------------Uso de Anidamiento----------------//
+
+//--------------------Menú-------------------------//
+
+header {
+
+    //----------------Color y Tamaño----------//
+
+    background-color: black;
+    width: 100%;
+    height: 50px;
+
+
+    section {
+
+        //-------------Flex Box Menú-------------//
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+
+        div {
+
+            //---------Box Model Menu__item------//
+
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+
+            //---------Transición---------------//
+
+            transition: all 1s;
+
+            //---------Hover transformación-----//
+
+            &:hover {
+                transform: scale(2);
+            }
+
+            a {
+
+                //--------Texto "a"----------//
+
+                font-family: $font;
+                text-decoration: $none;
+                font-style: $bold;
+                color: white;
+                font-size: 22px;
+
+            }
+
+        }
+
+    }
+}
+
+.logo-inicio {
+
+    //-------------Box Model logo-inicio---------//
+
+    margin-left: 25px;
+    margin-right: 100px;
+    width: 70px;
+
+    //--------------Trancisión logo-inicio-------//
+    
+    transition: all 1s;
+
+    //---------hover logo-inicio---------//
+
+    &:hover {
+        transform: scale(2);
+
+    }
+
+}

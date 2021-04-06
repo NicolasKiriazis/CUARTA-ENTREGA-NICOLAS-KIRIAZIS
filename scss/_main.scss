@@ -1,0 +1,115 @@
+//-----------Uso de Variables--------------//
+
+$font: 'Poiret One',
+cursive;
+$bold: bold;
+
+
+
+main {
+
+    .logo-1 {
+
+        //------------Box Model img----------//
+
+        width: 200px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+        //-----------Transición------------//
+
+        transition: all 1s;
+
+        //-----------Hover---------------//
+
+        &:hover {
+
+            transform: scale(2);
+
+        }
+
+    }
+
+
+}
+
+.banner {
+
+    /**------------------------------------------Box Model Banner----------------------------------------------------**/
+    width: 100%;
+    height: 450px;
+
+}
+
+
+//-----------------Uso de Exdends---------------//
+
+%titulos {
+
+    //------------Box Model Container-------//
+
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 75px;
+    background-color: black;
+
+
+    /**-------------Flex Box Titulos-----------**/
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.titulos {
+
+    @extend %titulos;
+
+    h1,h2,h3,h4,p {
+        color: white;
+        font-family: $font;
+        font-style: $bold;
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+/**----------------------------------------Edición de Bootstrap para parrafos-----------------------------------**/
+.paragraph {
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph p {
+
+    font-family: 'Poiret One', cursiva;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+/**------------------------------------------Imagen separador-----------------------------------------------------**/
+
+//----------------Uso de Extends-------------//
+
+%separador {
+
+    width: 800px;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+.imagen-separador {
+    @extend %separador;
+}

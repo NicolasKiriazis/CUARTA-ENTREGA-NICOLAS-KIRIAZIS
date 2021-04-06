@@ -1,0 +1,47 @@
+/**-------------------------------------------GALERIA------------------------------------------------------------**/
+
+#galeria .text-center {
+
+
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/**----------------Box Model imagenes de galeria-----------**/
+
+//---------Uso Variables--------//
+
+$color: white;
+
+#galeria {
+
+    .col-lg-4 {
+        margin: 0 !important;
+        padding: 25px;
+    }
+
+
+    img {
+        width: 250px;
+        width: 100%;
+
+        &:hover{
+            border: 10px solid darken($color, 10%)
+        }
+    }
+
+}
+
+.carousel-item {
+
+    width: 1100px;
+    height: 500px;
+    
+    }
+
