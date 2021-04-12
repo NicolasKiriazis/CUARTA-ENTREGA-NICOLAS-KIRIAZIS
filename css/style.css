@@ -51,7 +51,7 @@ main .logo-1 {
   transition: all 1s;
 }
 main .logo-1:hover {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 .banner {
